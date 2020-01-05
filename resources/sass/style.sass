@@ -1,0 +1,368 @@
+$primary-color: #e67e22
+$bg: #95a5a6
+/*--------------------------------------------*/
+/*BASIC SETUP*/
+/*--------------------------------------------*/
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    background-color: #fff
+    color: #555
+    font-family: 'Lato','Arial', sans-serif
+    font-weight: 300
+    font-size: 20px
+    text-rendering: optimizeLegibility
+
+// html, body
+//     width: 100%
+//     height: 100%
+/*--------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*--------------------------------------------*/
+.col
+    position: relative
+
+.col
+    height: 300px
+    background-position: center
+    background-size: cover
+    display: block
+
+.spring_mood
+    background-image: url(../img/spring_story/IMG_0902.jpg)
+
+// .spring_mood:focus
+
+.love_story
+    background-image: url(../img/spring_story/IMG_0939.jpg)
+
+.portrait
+    background-image: url(../img/spring_story/IMG_0926.jpg)
+
+.lifestyle
+    background-image: url(../img/spring_story/IMG_0919.jpg)
+
+footer 
+    height: 200px
+    background: #dfe6e9
+
+/*--------------------------------------------*/
+/*Image Discriptions*/
+/*--------------------------------------------*/
+.desc
+    position: absolute
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .5)
+    color: #fff
+    text-align: center
+    padding-top: 150px
+    opacity: 0
+    -webkit-transition: all .5s
+    -o-transition: all .5s
+    -o-transition: all .5s
+
+.col:hover .desc
+    opacity: 1
+    cursor: pointer
+    padding-top: 99px
+
+/*--------------------------------------------*/
+/*HEADINGS*/
+/*--------------------------------------------*/
+
+h1
+    margin-top: 0
+    margin-bottom: 20px
+    color: #fff
+    font-size: 180%
+    text-transform: uppercase
+    letter-spacing: 1px
+    word-spacing: 3px
+
+h2 
+    text-align: center
+    word-spacing: 2px
+    margin-bottom: 30px
+    font-size: 130%
+
+h2:after
+    display: block
+    background-color: $primary-color
+    width: 100px
+    height: 3px
+    content: " "
+    margin: 0 auto
+    margin-top: 30px
+
+/*--------------------------------------------*/
+/*BUTTONS*/
+/*--------------------------------------------*/
+
+.btn:link,
+    .btn:visited
+    display: inline-block
+    padding: 10px 30px
+    color: antiquewhite
+    font-weight: 200
+    text-decoration: none
+    border-radius: 200px
+    transition: background-color .3s, border .3s, color .3s;
+
+.btn-full:link,
+.btn-full:visited
+    background-color: #e67e22
+    border: 1px solid #e67e22
+    color: #fff
+    margin-right: 15px
+
+.btn-ghost:link,
+.btn-ghost:visited
+    border: 1px solid #e67e22
+    color: #e67e22
+
+.btn:hover,
+.btn:active
+    background-color: #b05d14
+
+
+.btn-full:hover,
+.btn-full:active
+    border: 1px solid #b05d14
+
+.btn-ghost:hover,
+.btn-ghost:active
+    border: 1px solid #b05d14
+    color: #fff
+
+/*--------------------------------------------*/
+/*HEADER*/
+/*--------------------------------------------*/
+
+header
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_1_man_photo.jpg)
+    background-size: cover
+    background-position: center
+    height: 100vh
+
+.hero_text_box
+    position: absolute
+    width: 1140px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.logo 
+    height: 55px
+    width: auto
+    float: left
+    margin-top: 10px
+    opacity: 0.6
+    border-radius: 10px
+
+
+.main-nav
+    float: right
+    list-style: none
+    margin-top: 25px
+
+    li
+        display: inline
+        margin-left: 40px
+
+        a:link, a:visited
+            padding: 8px 0
+            color: #fff
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 75%
+            border-bottom: 2px solid $primary-color transperent
+            transition: border-bottom .3s
+
+.main-nav li a:hover, a:active 
+    border-bottom: 2px solid $primary-color
+
+/*----------------------------------*/
+/*Slider first*/
+/*----------------------------------*/
+#slider, #slider-2
+    display: none
+    height: 100vh
+    width: 100vw
+    background-color: rgba(0, 0, 0, .8)
+    position: fixed
+    top: 0
+    left: 0
+    text-align: center
+
+    span 
+        float: right
+        margin: 40px 40px 0 0
+        cursor: pointer
+
+#main_img
+    background-image: url(../img/spring_story/IMG_0919.jpg)
+    width: 400px
+    height: 500px
+    background-position: center
+    background-size: cover
+    margin: 100px auto
+    // margin-top: 90px
+
+
+
+
+/*----------------------------------*/
+/*Slider second*/
+/*----------------------------------*/
+.block
+    width: auto
+    height: 90%
+    
+
+
+.block>img
+    max-width: 100%
+    width: auto\9
+    height: 100%
+    vertical-align: middle
+    border: 0
+    margin-top: 2.5%
+
+/*----------------------------------*/
+/*Slider 3*/
+/*----------------------------------*/
+.class_3
+    overflow: hidden
+    position: relative
+
+.slider_item
+    flex: 0 0 100%
+    max-width: 100%
+
+.slider_item>div
+    line-height: 250px
+    font-size: 100px
+    text-align: center
+    background-size: cover
+
+/*----------------------------------*/
+/*Slider 4*/
+/*----------------------------------*/
+.slider-4
+    width: 400px
+    height: 500px
+    position: relative
+    margin: 0 auto
+    overflow: hidden
+    top: 50%
+    margin-top: -250px
+
+
+.line
+    left: 0
+    position: relative
+    transition: all ease 2s
+    width: 400px
+    height: 100%
+
+
+.slide
+    width: 400px
+    height: 100%
+    border: 1px solid black
+    box-sizing: border-box
+    background-size: cover
+    background-position: center
+    float: left
+
+
+.one
+    background-image: url(../img/spring_story/1.jpg)
+
+.two
+    background-image: url(../img/spring_story/2.jpg)
+
+.three
+    background-image: url(../img/spring_story/3.jpg)
+
+.four
+    background-image: url(../img/spring_story/4.jpg)
+
+.five
+    background-image: url(../img/spring_story/5.jpg)
+
+.six
+    background-image: url(../img/spring_story/3.jpg)
+
+
+
+.five
+    background-image: url(../img/spring_story/5.jpg)
+
+#conteiner
+    display: none
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, .8)
+    position: fixed
+    top: 0
+    left: 0
+    text-align: center
+
+/*btn rules*/
+#btn-close-4
+    position: absolute
+    right: 20px
+    top: 20px
+    z-index: 1
+    font-size: 140%
+
+.btn-left:after
+    content: "\e094"
+
+#arrow_left_4
+    position: absolute
+    font-size: 140%
+    z-index: 1
+    left: 20px
+    top: 50%
+
+#arrow_right_4
+    position: absolute
+    font-size: 140%
+    z-index: 1
+    right: 20px
+    top: 50%
+
+#arrow_right_4:hover, #arrow_left_4:hover, #btn-close-4:hover
+    cursor: pointer
+    color: white
+    transition: 0.5s
+
+
+
+
+/*----------------------------------*/
+/*media rules*/
+/*----------------------------------*/
+
+@media only screen and (max-width: 600px)
+    body
+        background-color: $bg
+    .row
+        max-width: 100%
+
+/*----------------------------------*/
+/*place for test code*/
+/*----------------------------------*/
+.b
+    height: 100px
+    width: 100px
+    background-color: #1abc9c
