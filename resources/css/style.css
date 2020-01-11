@@ -7,6 +7,14 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background: #ffffff;
+  color: #222222;
+  padding: 0 70px;
+  font-size: 16px;
+  font-family: 'Abel';
+  font-weight: 400; }
+
 html {
   background-color: #fff;
   color: #555;
@@ -14,6 +22,58 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility; }
+
+.logo-and-menu-container {
+  opacity: 1;
+  visibility: inherit;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  pointer-events: none;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  z-index: 10000; }
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.logo-and-menu-container img {
+  width: 187px;
+  height: 43.8211px; }
+
+.main-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.menu-wrap {
+  line-height: 44px;
+  display: block; }
+
+.main-menu a {
+  text-decoration: none;
+  color: #222222; }
+
+.section-features {
+  top: 200px;
+  position: relative; }
 
 /*--------------------------------------------*/
 /*REUSABLE COMPONENTS*/
@@ -136,13 +196,8 @@ h2:after {
 /*HEADER*/
 /*--------------------------------------------*/
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(background_1_man_photo.jpg);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_1_man_photo.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_1_man_photo.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_1_man_photo.jpg);
   background-size: cover;
-  background-position: center;
-  height: 100vh; }
+  background-position: center; }
 
 .hero_text_box {
   position: absolute;
@@ -152,14 +207,6 @@ header {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-
-.logo {
-  height: 55px;
-  width: auto;
-  float: left;
-  margin-top: 10px;
-  opacity: 0.6;
-  border-radius: 10px; }
 
 .main-nav {
   float: right;
@@ -338,6 +385,10 @@ header {
 /*----------------------------------*/
 /*media rules*/
 /*----------------------------------*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: #95a5a6; }

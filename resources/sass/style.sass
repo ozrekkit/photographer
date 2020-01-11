@@ -9,6 +9,14 @@ $bg: #95a5a6
     padding: 0
     box-sizing: border-box
 
+body
+    background: #ffffff
+    color: #222222
+    padding: 0 70px
+    font-size: 16px
+    font-family: 'Abel'
+    font-weight: 400
+
 html
     background-color: #fff
     color: #555
@@ -16,6 +24,65 @@ html
     font-weight: 300
     font-size: 20px
     text-rendering: optimizeLegibility
+
+//Logo and menu conteiner
+
+
+.logo-and-menu-container
+    opacity: 1
+    visibility: inherit
+    top: 0
+    right: 0
+    left: 0
+    backface-visibility: visible
+    padding-top: 50px
+    padding-bottom: 50px
+    pointer-events: none
+    pointer-events: auto
+    user-select: none
+    display: block
+    z-index: 10000
+    // display: flex
+    // justify-content: center
+    
+    // height: 50px
+    // width: 1170px
+    // display: flex
+    // box-sizing: border-box
+
+.container
+    width: 1170px
+    padding-left: 15px
+    padding-right: 15px
+    display: flex
+
+.logo-and-menu-container img
+    width: 187px
+    height: 43.8211px
+
+.main-menu
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    
+.menu-wrap
+    line-height: 44px
+    display: block
+
+.main-menu a 
+    text-decoration: none
+    color: #222222
+
+// .stiky-spacer
+    height: 144px
+    display: block
+    position: relative
+    top: -144px
+
+.section-features
+   top: 200px
+   position: relative
+
 
 // html, body
 //     width: 100%
@@ -146,10 +213,10 @@ h2:after
 /*--------------------------------------------*/
 
 header
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_1_man_photo.jpg)
+    //background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_1_man_photo.jpg)
     background-size: cover
     background-position: center
-    height: 100vh
+    //height: 100vh
 
 .hero_text_box
     position: absolute
@@ -158,13 +225,13 @@ header
     left: 50%
     transform: translate(-50%, -50%)
 
-.logo 
-    height: 55px
-    width: auto
-    float: left
-    margin-top: 10px
-    opacity: 0.6
-    border-radius: 10px
+// .logo 
+//     height: 55px
+//     width: auto
+//     float: left
+//     margin-top: 10px
+//     opacity: 0.6
+//     border-radius: 10px
 
 
 .main-nav
@@ -352,6 +419,11 @@ header
 /*----------------------------------*/
 /*media rules*/
 /*----------------------------------*/
+
+@media (min-width: 1200px)
+    .container
+        width: 1170px
+
 
 @media only screen and (max-width: 600px)
     body
