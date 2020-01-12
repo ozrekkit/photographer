@@ -75,6 +75,34 @@ html {
   top: 200px;
   position: relative; }
 
+.section-title {
+  text-align: center !important;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.section-title h1 {
+  text-transform: uppercase;
+  font-size: 125px;
+  font-family: 'Abel';
+  font-weight: 400; }
+
+.auto-type-el {
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  font-family: 'Abel';
+  font-weight: 400; }
+
+.auto-type-text-entry {
+  display: inline-block; }
+
+.type-cursor {
+  display: inline-block;
+  opacity: 1;
+  zoom: 1;
+  -webkit-animation: blink-animation 0.7s steps(5, start) infinite;
+  animation: blink-animation 0.7s steps(5, start) infinite; }
+
 /*--------------------------------------------*/
 /*REUSABLE COMPONENTS*/
 /*--------------------------------------------*/
@@ -132,7 +160,7 @@ footer {
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fff;
+  color: #222222;
   font-size: 180%;
   text-transform: uppercase;
   letter-spacing: 1px;
