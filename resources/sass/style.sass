@@ -111,7 +111,47 @@ html
     zoom: 1
     animation: blink-animation .7s steps(5, start) infinite
 
+.product-filter
+    padding-top: 25px
+    padding-bottom: 50px 
+    text-align: center
+    position: relative
 
+.product-filter ul li
+    display: inline-block
+    margin-left: 40px
+    transition-delay: 50ms
+    
+
+.product-filter ul li a
+    text-decoration: none
+    cursor: pointer
+    position: relative
+
+.product-filter ul li a:after
+    display: block
+    position: absolute
+    left: 0
+    width: 0
+    height: 1.3px
+    background-color: #a58f60
+    bottom: -1px
+    content: ""
+    transition: width 0.3s ease-out
+
+
+.product-filter ul li a:focus:after,
+.product-filter ul li a:hover:after
+    width: 100%
+
+.product-filter ul li:first-child
+    margin-left: 0
+
+
+.product-filter ul
+    text-transform: uppercase
+    padding-left: 0
+    list-style-type: none
 
 // html, body
 //     width: 100%
@@ -281,8 +321,8 @@ header
             border-bottom: 2px solid $primary-color transperent
             transition: border-bottom .3s
 
-.main-nav li a:hover, a:active 
-    border-bottom: 2px solid $primary-color
+// .main-nav li a:hover, a:active 
+//     border-bottom: 2px solid $primary-color
 
 /*----------------------------------*/
 /*Slider first*/
