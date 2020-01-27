@@ -146,6 +146,49 @@ html {
   padding-left: 0;
   list-style-type: none; }
 
+.page-container {
+  border: 1px solid black;
+  width: 1170px;
+  margin: 0 auto;
+  position: relative; }
+
+.block1 {
+  background-color: #e67e22;
+  height: 100%;
+  width: 33%;
+  margin: 0 5px; }
+
+.myBlocks {
+  width: 33%;
+  min-height: auto;
+  margin: 5px;
+  position: absolute;
+  -webkit-transition: width 2s;
+  -o-transition: width 2s;
+  transition: width 2s; }
+
+img {
+  width: 100%; }
+
+.photo-work-space {
+  position: relative;
+  height: 900px; }
+
+.item-box-container {
+  height: 100px;
+  background-color: red;
+  float: left; }
+
+.item-box-container img {
+  width: 33.333333%;
+  display: block;
+  position: absolute;
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-filter: blur(0);
+  filter: blur(0); }
+
 /*--------------------------------------------*/
 /*REUSABLE COMPONENTS*/
 /*--------------------------------------------*/
@@ -386,27 +429,6 @@ header {
   background-size: cover;
   background-position: center;
   float: left; }
-
-.one {
-  background-image: url(../img/spring_story/1.jpg); }
-
-.two {
-  background-image: url(../img/spring_story/2.jpg); }
-
-.three {
-  background-image: url(../img/spring_story/3.jpg); }
-
-.four {
-  background-image: url(../img/spring_story/4.jpg); }
-
-.five {
-  background-image: url(../img/spring_story/5.jpg); }
-
-.six {
-  background-image: url(../img/spring_story/3.jpg); }
-
-.five {
-  background-image: url(../img/spring_story/5.jpg); }
 
 #conteiner {
   display: none;
